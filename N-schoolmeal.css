@@ -1,0 +1,128 @@
+body{
+    padding-top: 100px;
+    /* margin: 0%; */
+    background-color: #00205A;
+    height: 10000px;
+}
+
+.schoolmeal-bar{
+    z-index: 1;
+    background-color:white;
+    position: fixed;
+    height: 10vh;
+    width: 100%;
+
+    font-size: 2vh;
+
+    top:0;
+    left:0;
+    right:0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0px 5px 10px -3px gray;
+    /*
+    boxshadow에
+    두 개의 값을 사용하면 offset-x , offsset-y 로 분석한다
+    세 개의 값을 주어주면 blur-radius 로 분석한다
+    네 개의 값을 주어주면 spread-radius 로 분석한다
+     */
+}
+
+.schoolmeal-bar h1{
+    color: #00205A;
+}
+
+
+
+
+
+
+
+/* fixed해서 처음에 겹침을 없애기 위해 */
+
+.schoolmeal-main{
+    margin: 37vh;
+    margin-top: 10vh;
+    padding: 8vh;
+    background-color: lightgray;
+    border-radius: 10px 10px 10px 10px;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    /* justify-content: center; */
+}
+/* main에 flex를 줌 */
+
+.schoolmeal-table-set{
+/* margin: 6px; */
+border: 6px solid lightgrey;
+user-select: none;
+display: inline-block;
+}
+
+/* .schoolmeal-table-set:hover{
+border:5px solid navy;
+} */
+
+.schoolmeal-tables-1{
+    display: inline-block;
+    background-color: gray;
+    width: 30px;
+    height: 30px;
+    border-radius: 200px 0 0 0;
+}
+
+.schoolmeal-tables-1:hover{
+    border:4px solid gold;
+}
+
+.schoolmeal-tables-2{
+    display: inline-block;
+    background-color: gray;
+    width: 30px;
+    height: 30px;
+    border-radius: 0 200px 0 0 ;
+}
+
+.schoolmeal-tables-3{
+    display: inline-block;
+    background-color: gray;
+    width: 30px;
+    height: 30px;
+    border-radius: 0 0 0 200px;
+}
+
+.schoolmeal-tables-4{
+    display: inline-block;
+    background-color: gray;
+    width: 30px;
+    height: 30px;
+    border-radius: 0 0 200px 0;   
+}
+
+
+
+.schoolmeal-tables-set-line-1{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+.schoolmeal-tables-set-line-2{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+.schoolmeal-tables-set-line-3{
+    display: flex; 
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+.schoolemael-main-block{
+    
+}
