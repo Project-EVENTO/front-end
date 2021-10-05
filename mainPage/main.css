@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #00205A;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none
+    
+}
+header .container{
+    width: 100%;
+    display: flex;
+    height: 70px;
+    background-color: #fff;
+    justify-content:space-between;
+    align-items: center;
+    position: fixed;
+}
+
+.logout_btn{
+    background-color: transparent;
+    background: url(../img/logout.svg) no-repeat;
+    border:none;
+    width: 50px;
+    height: 50px;
+}
+
+.title{
+    width: auto;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    z-index: 2;
+}
+
+.title a{
+    text-decoration: none;
+    color: #00205A;
+}
+
+/* MAIN */
+
+main .container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+}
+
+.card{
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    margin: 40px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover{
+    width: 450px;
+    height: 450px;
+}
+
+.card a{
+    display: block;
+    width: auto;
+    height: 100vh;
+    color: #00205A;
+    font-size:  20px;
+    text-align: center;
+}
+
+
+.card a h1{
+    font-weight: bolder;
+}
+
+.card a img{
+    width: 300px;
+    height: 300px;
+}
+
+
