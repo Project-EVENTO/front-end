@@ -1,5 +1,6 @@
 body{
     padding-top: 100px;
+    /* margin: 0%; */
     background-color: #00205A;
     height: 10000px;
 }
@@ -28,38 +29,45 @@ body{
     세 개의 값을 주어주면 blur-radius 로 분석한다
     네 개의 값을 주어주면 spread-radius 로 분석한다
      */
+
 }
 
 .schoolmeal-bar h1{
     color: #00205A;
 }
 
+.schoolmeal-bar h1 a{
+    text-decoration-line: none;
+    color:#00205A;
+}
 
-
-
+.schoolmeal-bar h1 a:visited{
+    text-decoration: none;
+}
 
 
 
 /* fixed해서 처음에 겹침을 없애기 위해 */
 
 .schoolmeal-main{
-    margin: 37vh;
+    /* margin: 37vh; */
+    margin:400px;
     margin-top: 10vh;
-    padding: 8vh;
+    padding: 10vh;
     background-color: lightgray;
     border-radius: 10px 10px 10px 10px;
     
-    display: flex;
-    flex-flow: column nowrap;
+    /* display: flex;
+    flex-flow: column nowrap; */
     /* justify-content: center; */
 }
 /* main에 flex를 줌 */
 
 .schoolmeal-table-set{
-/* margin: 6px; */
-border: 6px solid lightgrey;
+margin: 6px;
+/* border: 6px solid lightgrey; */
 user-select: none;
-display: inline-block;
+/* display: inline-block; */
 }
 
 /* .schoolmeal-table-set:hover{
@@ -75,7 +83,23 @@ border:5px solid navy;
 }
 
 .schoolmeal-tables-1:hover{
-    border:4px solid gold;
+    background-color: gold;
+    cursor: pointer;
+}
+
+.schoolmeal-tables-2:hover{
+    background-color:  gold;
+    cursor: pointer;
+}
+
+.schoolmeal-tables-3:hover{
+    background-color: gold;
+    cursor: pointer;
+}
+
+.schoolmeal-tables-4:hover{
+    background-color: gold;
+    cursor: pointer;
 }
 
 .schoolmeal-tables-2{
@@ -123,5 +147,24 @@ border:5px solid navy;
 }
 
 .schoolemael-main-block{
-    
+    /* height: 324px; */
+    /* width: 740px; */
 }
+
+
+
+
+
+
+
+#t1,#t2,#t3,#t4,#t5,#t6,#t7,#t8{
+    background-color: lightcoral;
+    cursor:no-drop;
+}
+
+#t25,#t26,#t27,#t28,#t29,#t30,#t31,#t32,#t33,#t34,#t35,#t36{
+    background-color: lightcoral;
+    cursor:no-drop;
+}
+
+
