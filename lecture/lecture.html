@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./lecture.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+        </style>
 </head>
 <body>
     <header>
@@ -17,28 +20,26 @@
     </header>
     <div class="container">
         <div class="lecture">
+            <h1>특강 신청</h1> 
             
-            <h1>특강 신청</h1>
-            <form>
-                <input type="text" placeholder="특강명" id="title" onkeydown="
-
-                ">
-                <input type="text" placeholder="주최자" id="host">
-                <input type="text" placeholder="장소" id="place">
-                <SELECT NAME=sltSample SIZE=1>
-                    <OPTION selected>학년을 선택해주세요.</OPTION>
+            <form action="lecture/register" method="post" name="lectureForm">
+                <input type="text" placeholder="특강명" id="title" name="title" required>
+                <input type="text" placeholder="주최자" id="host" name="host" >
+                <input type="text" placeholder="장소" id="place" name="place" >
+                <SELECT name=grade SIZE=1 id="grade">
+                    <OPTION selected value=0>학년을 선택해주세요.</OPTION>
                     <OPTION VALUE=1>1학년</OPTION>
                     <OPTION VALUE=2>2학년</OPTION>
                     <OPTION VALUE=3 >3학년</OPTION>
                 </SELECT>
-                <input type="number" placeholder="인원" id="member">
+                <input type="number"min="0" placeholder="인원" id="member" name="member">
                 <input type="datetime-local" id="date">
-               <textarea  id="des" cols="30" rows="10" placeholder="설명"></textarea>
-                <input type="submit" class="submit" onclick="">
-            </form>
-        </div>
+               <textarea  id="des" cols="30" rows="10" placeholder="설명" style="resize: none;" name="des"></textarea>
+            </form>        
+            <button class="submit" onclick="compare()">생성하기</button>    
 
     </div>
     <script src="./lecture.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
 </body>
 </html>

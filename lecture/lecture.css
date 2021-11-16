@@ -1,5 +1,6 @@
 *{
     text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif; 
 }
 body{
     width: 100%;
@@ -34,9 +35,10 @@ form{
     background-color: #001845;
     align-items: center;
     justify-content: center;
-    width: 400px;
-    height: 300px;
-    border-radius: 7px;
+    width: 600px;
+    height: 500px;
+    border: #fff solid;
+    border-radius: 7px ;
 }
 
 input{
@@ -44,5 +46,44 @@ input{
     height: 20px;
     margin: 5px;
     background-color: white;
-    border-radius: 4px;
+    border-radius: 10px;
+    margin-bottom: 7px;
+    /* box-shadow: none; */
+}
+input:focus{
+    outline: none;
+}
+
+select{
+    width: 200px;
+    height: 30px;
+    margin-bottom: 7px;
+}
+select:focus{
+    outline: none;
+}
+
+#des{
+    width: 200px;
+    height: 50px;
+    border-radius: 7px;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+#title{
+    width: 200px;
+    height:50px;
+}
+#title::placeholder{
+    font-size: 16px;
+}
+
+.submit{
+    width: 150px;
+    height: 70px;
+    font-size:20px;
+    margin-top: 25px;
 }
