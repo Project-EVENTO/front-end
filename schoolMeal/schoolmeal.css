@@ -1,9 +1,32 @@
 body{
-    padding-top: 100px;
     /* margin: 0%; */
     background-color: #00205A;
-    height: 10000px;
+    /* height: 10000px; */
+    margin: 0px;
+    padding:400px;
+    padding-top: 200px;
+    /* = main에서 margin400px 과 같다 */
 }
+
+
+
+.schoolmeal-main{
+    /* margin: 37vh; */
+
+    /* margin:400px; */
+
+    /* margin:auto; */
+    /* margin-top: 10vh; */
+    padding: 15vh;
+    background-color: lightgray;
+    border-radius: 10px 10px 10px 10px;
+    box-sizing: border-box;
+    
+    /* display: flex;
+    flex-flow: column nowrap; */
+    /* justify-content: center; */
+}
+
 
 .schoolmeal-bar{
     z-index: 1;
@@ -32,139 +55,124 @@ body{
 
 }
 
+
 .schoolmeal-bar h1{
     color: #00205A;
 }
-
 .schoolmeal-bar h1 a{
     text-decoration-line: none;
     color:#00205A;
 }
-
 .schoolmeal-bar h1 a:visited{
     text-decoration: none;
 }
 
 
 
-/* fixed해서 처음에 겹침을 없애기 위해 */
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
 .schoolmeal-main{
-    /* margin: 37vh; */
-    margin:400px;
-    margin-top: 10vh;
-    padding: 10vh;
-    background-color: lightgray;
-    border-radius: 10px 10px 10px 10px;
-    
-    /* display: flex;
-    flex-flow: column nowrap; */
-    /* justify-content: center; */
-}
-/* main에 flex를 줌 */
-
-.schoolmeal-table-set{
-margin: 6px;
-/* border: 6px solid lightgrey; */
-user-select: none;
-/* display: inline-block; */
+    min-width: fit-content;
 }
 
-/* .schoolmeal-table-set:hover{
-border:5px solid navy;
-} */
-
-.schoolmeal-tables-1{
-    display: inline-block;
-    background-color: gray;
-    width: 30px;
-    height: 30px;
-    border-radius: 200px 0 0 0;
+.schoolemael-main-block{
+    cursor:default;
+    user-select: none;
 }
-
-.schoolmeal-tables-1:hover{
-    background-color: gold;
-    cursor: pointer;
-}
-
-.schoolmeal-tables-2:hover{
-    background-color:  gold;
-    cursor: pointer;
-}
-
-.schoolmeal-tables-3:hover{
-    background-color: gold;
-    cursor: pointer;
-}
-
-.schoolmeal-tables-4:hover{
-    background-color: gold;
-    cursor: pointer;
-}
-
-.schoolmeal-tables-2{
-    display: inline-block;
-    background-color: gray;
-    width: 30px;
-    height: 30px;
-    border-radius: 0 200px 0 0 ;
-}
-
-.schoolmeal-tables-3{
-    display: inline-block;
-    background-color: gray;
-    width: 30px;
-    height: 30px;
-    border-radius: 0 0 0 200px;
-}
-
-.schoolmeal-tables-4{
-    display: inline-block;
-    background-color: gray;
-    width: 30px;
-    height: 30px;
-    border-radius: 0 0 200px 0;   
-}
-
-
 
 .schoolmeal-tables-set-line-1{
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-start;
+    width: fit-content;
 }
 
 .schoolmeal-tables-set-line-2{
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-start;
 }
 
 .schoolmeal-tables-set-line-3{
     display: flex; 
     flex-flow: row nowrap;
-    justify-content: flex-end;
 }
 
-.schoolemael-main-block{
-    /* height: 324px; */
-    /* width: 740px; */
-}
-
-
-
-
-
-
-
-#t1,#t2,#t3,#t4,#t5,#t6,#t7,#t8{
-    background-color: lightcoral;
-    cursor:no-drop;
-}
-
-#t25,#t26,#t27,#t28,#t29,#t30,#t31,#t32,#t33,#t34,#t35,#t36{
-    background-color: lightcoral;
-    cursor:no-drop;
+.schoolmeal-tables-set-line-4{
+    display: flex; 
+    flex-flow: row nowrap;
+    float: right;
 }
 
 
+
+.schoolemael-table-set{
+    width: auto;
+    min-width: 86px;
+    max-width: 86px;
+
+    margin: 7px;
+}
+
+.schoolmeal-table-1{
+    width: 40px;
+    border-radius: 100px 0 0 0;
+    background-color: gray;
+
+    display:inline-block;
+    cursor: pointer;
+
+    margin-right:3px;
+}
+.schoolmeal-table-1:hover{
+    background-color:dimgray;
+}
+.schoolmeal-table-2{
+    width: 40px;
+    border-radius: 0px 100px 0px 0px;
+    background-color: gray;
+    
+    display:inline-block;
+    cursor: pointer;
+}
+.schoolmeal-table-2:hover{
+    background-color:dimgray;
+}
+.schoolmeal-table-3{
+    width: 40px;
+    border-radius: 0px 0px 0px 100px;
+    background-color: gray;
+
+    margin-top: 3px;
+    display:inline-block;
+    cursor: pointer;
+
+    margin-right:3px;
+}
+.schoolmeal-table-3:hover{
+    background-color:dimgray;
+}
+.schoolmeal-table-4{
+    width: 40px;
+    border-radius: 0px 0px 100px 0px;
+    background-color: gray;
+
+    display:inline-block;
+    cursor: pointer;
+}
+.schoolmeal-table-4:hover{
+    background-color:dimgray;
+}
+
+
+.schoolmeal-tablecontent{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    opacity: 0.5;
+}
