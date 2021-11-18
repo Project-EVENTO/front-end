@@ -22,7 +22,7 @@
         <div class="lecture">
             <h1>특강 신청</h1> 
             
-            <form action="lecture/register" method="post" name="lectureForm">
+            <form  name="lectureForm">
                 <input type="text" placeholder="특강명" id="title" name="title" required>
                 <input type="text" placeholder="주최자" id="host" name="host" >
                 <input type="text" placeholder="장소" id="place" name="place" >
@@ -36,10 +36,11 @@
                 <input type="datetime-local" id="date">
                <textarea  id="des" cols="30" rows="10" placeholder="설명" style="resize: none;" name="des"></textarea>
             </form>        
-            <button class="submit" onclick="compare()">생성하기</button>    
+            <button class="submit" onclick="compare()">생성하기</button> x`x`   
 
     </div>
     <script src="./lecture.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </body>
 </html>

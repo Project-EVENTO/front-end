@@ -1,17 +1,31 @@
-
 const title = document.querySelector("#title")
 const host =  document.querySelector("#host")
 const place = document.querySelector("#place")
 const grade =  document.querySelector("#grade")
 const date = document.querySelector("#date");
 const memberInput = document.querySelector("#member");
+const des = document.querySelector("#des");
+
+const serverAddress = "http://localhost:5500";
 
 function postData(){
-    document.lectureForm.submit();
+    return axios.post(serverAddress+'/lecture',{
+        title:title.value,
+        host:host.value,
+        place:place.value,
+        grade:grade.value,
+        // date:date.value,
+        member:memberInput.value,
+        des:des.value
+    }).then(()=>{
+        console.log("hi")
+    }).catch((e)=>{
+        console.log("error"+e)
+    })
 }
 
 
-const compare= ()=>{
+const compare = ()=>{
     console.log(title.value)
     if(title.value==''){
         swal("특강명을 입력해주세요.")
@@ -27,7 +41,7 @@ const compare= ()=>{
         swal("날짜를 입력해주세요.")
     }
     else{
-        swal("특강 생성 성공","버튼을 눌러주세요.","succes");
+        swal("특강 생성 성공","버튼을 눌러주세요.","success");
         postData();
     }
 }
