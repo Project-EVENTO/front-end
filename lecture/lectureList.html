@@ -5,20 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./lectureLIst.css">
 </head>
 <body>
-    <table border="1">
-        <th>특강명</th>
-        <th>주최자</th>
-        <th>장소</th>
-        <th>날짜</th>
-        <th>최대인원</th>
-        <th>설명</th>
+    
+    <header>
+        <div class="head">
+            <h1></h1>
+            <h1 class="title"><a href="../mainPage/main.html">evento</a></h1>
+           <button class="logout_btn"></button>
+        </div>
+    </header>
+
+    <main>
+        <table border="1" id="lectureList">
+            <th>특강명</th>
+            <th>주최자</th>
+            <th>장소</th>
         <th>학년</th>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-        </tr>
-    </table>
+        <th>최대인원</th>
+        <th>날짜</th>
+        <th>설명</th>
+        </table>
+</main>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./lectureList.js"></script>
+    
 </body>
 </html>

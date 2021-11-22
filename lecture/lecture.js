@@ -14,7 +14,7 @@ function postData(){
         host:host.value,
         place:place.value,
         grade:grade.value,
-        // date:date.value,
+        date:date.value,
         member:memberInput.value,
         des:des.value
     }).then(()=>{

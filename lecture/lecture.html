@@ -18,10 +18,10 @@
            <button class="logout_btn"></button>
         </div>
     </header>
+    <a href="./lectureList.html" id="lectureListLink">강의 목록보기</a>
     <div class="container">
         <div class="lecture">
             <h1>특강 신청</h1> 
-            
             <form  name="lectureForm">
                 <input type="text" placeholder="특강명" id="title" name="title" required>
                 <input type="text" placeholder="주최자" id="host" name="host" >
@@ -36,8 +36,7 @@
                 <input type="datetime-local" id="date">
                <textarea  id="des" cols="30" rows="10" placeholder="설명" style="resize: none;" name="des"></textarea>
             </form>        
-            <button class="submit" onclick="compare()">생성하기</button> x`x`   
-
+            <button class="submit" onclick="compare()">생성하기</button>   
     </div>
     <script src="./lecture.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
