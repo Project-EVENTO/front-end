@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EVENTO</title>
     <link rel="stylesheet" href="schoolmeal.css">
 </head>
 <body>
@@ -25,9 +25,21 @@
             
             <div class="schoolmeal-tables-set-line-4"></div>
         </div>
+
+        <div class="showselectedTable">
+            <div class="showSelectedTable"></div>
+            <button class="selectTable">선택</button>
+
+            <form action="/lunch/insert" method="post" class="sendSelectedInfo" name="selected">
+                <input type="hidden" class="userInfo">
+                <input type="hidden" class="selectedInfo">
+            </form>
+        </div>
+
     </main> 
     
 
-    <script src="schoolmeal.js"></script>
+    <script src="./schoolmeal.js"></script>
+    <script src="./schoolmealAddevent.js"></script>
 </body>
 </html>

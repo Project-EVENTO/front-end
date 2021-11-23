@@ -33,6 +33,8 @@ for (var i=0;i<tableNumber;i++){
 
 
 
+
+
 makingTable(6,line1);
 makingTable(9,line2);
 makingTable(9,line3);
