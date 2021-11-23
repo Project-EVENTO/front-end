@@ -6,7 +6,7 @@ const date = document.querySelector("#date");
 const memberInput = document.querySelector("#member");
 const des = document.querySelector("#des");
 
-const serverAddress = "http://localhost:5500";
+const serverAddress = "http://10.80.162.177:5500";
 
 function postData(){
     return axios.post(serverAddress+'/lecture',{

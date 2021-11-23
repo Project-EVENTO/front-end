@@ -1,4 +1,5 @@
-const serverAddress = "http://localhost:5500";
+const serverAddress = "http://10.80.162.177:5500";
+
 
 const table = document.querySelector("#lectureList")
 
@@ -17,7 +18,8 @@ function getData(){
 function lectureList(data){
     data.map((ele)=>{ 
         const tr = document.createElement("tr")
-        Array('lecture_title', 'lecture_host', 'lecture_place','lecture_grade','lecture_member','lecture_date','lecture_des' ).forEach((keyName) => {
+        const delbtn = document.createElement("button")
+        Array('lc_title', 'lc_host', 'lc_place','lc_grade','lc_max','lc_date','lc_des' ).forEach((keyName) => {
             console.log(keyName)
             const property = ele[keyName]
             const td  = document.createElement("td")
@@ -27,16 +29,23 @@ function lectureList(data){
             tr.appendChild(td)
         })
         tr.id = `masterEle${data.indexOf(ele)}`
+        delbtn.innerText="❌"
+        delbtn.id=ele['lc_seq']
+        delbtn.addEventListener("click",delLecture)
+        tr.appendChild(delbtn)
         table.appendChild(tr)
-
-        // const newId = data.length
-        // console.log(ele)
-        // table.appendChild(tr)
-        // tr.appendChild(td)
-        // tr.id=newId
-        // td.innerText=e.lecture_title
         
     })
 }
+
+function delLecture(event){
+    const id = event.target.id
+    axios.post(serverAddress+'/lecture/delete',{id:id})
+    .then((req)=>{
+        console.log(suc)
+        getData();
+    })
+}
+
 
 getData();
