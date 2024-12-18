@@ -4,246 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./schoolmeal.css">
+    <title>EVENTO</title>
+    <link rel="stylesheet" href="schoolmeal.css">
 </head>
 <body>
     <header class="schoolmeal-bar">
-        <h1>evento</h1>
+        <h1>
+            <a href="../mainPage/main.html">
+                evento
+            </a>
+        </h1>
     </header>
+    <main class="schoolmeal-main">
+        <div class="schoolemael-main-block">
+            <div class="schoolmeal-tables-set-line-1"></div>
+
+            <div class="schoolmeal-tables-set-line-2"></div>
+
+            <div class="schoolmeal-tables-set-line-3"></div>
+            
+            <div class="schoolmeal-tables-set-line-4"></div>
+        </div>
+
+        <div class="showselectedTable">
+            <div class="showSelectedTable"></div>
+            <button class="selectTable">선택</button>
+
+            <form action="/lunch/insert" method="post" class="sendSelectedInfo" name="selected">
+                <input type="hidden" class="userInfo">
+                <input type="hidden" class="selectedInfo">
+            </form>
+        </div>
+
+    </main> 
     
-    <main class = "schoolmeal-main">
-<!--
-부채꼴 2개, 2개 라서 원래 div로 2개씩 나눴는데 br태그로 바꿈
- -->
- 
- <div class="schoolemael-main-block">
-    <div class = "schoolmeal-tables-set-line-1">
-            <div class="schoolmeal-table-set">
-            <div class = "schoolmeal-tables-1"></div>
-            <div class = "schoolmeal-tables-2"></div>
-            <br>
-            <div class = "schoolmeal-tables-3"></div>
-            <div class = "schoolmeal-tables-4"></div>
-            </div>
-            <div class="schoolmeal-table-set">
-            <div class = "schoolmeal-tables-1"></div>
-            <div class = "schoolmeal-tables-2"></div>
-            <br>
-            <div class = "schoolmeal-tables-3"></div>
-            <div class = "schoolmeal-tables-4"></div>
-            </div>
-            <div class="schoolmeal-table-set">
-            <div class = "schoolmeal-tables-1"></div>
-            <div class = "schoolmeal-tables-2"></div>
-            <br>
-            <div class = "schoolmeal-tables-3"></div>
-            <div class = "schoolmeal-tables-4"></div>
-            </div>
-            <div class="schoolmeal-table-set">
-            <div class = "schoolmeal-tables-1"></div>
-            <div class = "schoolmeal-tables-2"></div>
-            <br>
-            <div class = "schoolmeal-tables-3"></div>
-            <div class = "schoolmeal-tables-4"></div>
-            </div>
-            <div class="schoolmeal-table-set">
-            <div class = "schoolmeal-tables-1"></div>
-            <div class = "schoolmeal-tables-2"></div>
-            <br>
-            <div class = "schoolmeal-tables-3"></div>
-            <div class = "schoolmeal-tables-4"></div>
-            </div>
-            <div class="schoolmeal-table-set">
-            <div class = "schoolmeal-tables-1"></div>
-            <div class = "schoolmeal-tables-2"></div>
-            <br>
-            <div class = "schoolmeal-tables-3"></div>
-            <div class = "schoolmeal-tables-4"></div>
-            </div>
-    </div>
 
-    <div class = "schoolmeal-tables-set-line-2">
-            <div class="schoolmeal-table-set">
-                <div class = "schoolmeal-tables-1"></div>
-                <div class = "schoolmeal-tables-2"></div>
-                <br>
-                <div class = "schoolmeal-tables-3"></div>
-                <div class = "schoolmeal-tables-4"></div>
-            </div>
-            <div class="schoolmeal-table-set">
-                <div class = "schoolmeal-tables-1"></div>
-                <div class = "schoolmeal-tables-2"></div>
-                <br>
-                <div class = "schoolmeal-tables-3"></div>
-                <div class = "schoolmeal-tables-4"></div>
-            </div>
-            <div class="schoolmeal-table-set">
-                <div class = "schoolmeal-tables-1"></div>
-                <div class = "schoolmeal-tables-2"></div>
-                <br>
-                <div class = "schoolmeal-tables-3"></div>
-                <div class = "schoolmeal-tables-4"></div>
-            </div>
-            <div class="schoolmeal-table-set">
-                <div class = "schoolmeal-tables-1"></div>
-                <div class = "schoolmeal-tables-2"></div>
-                <br>
-                <div class = "schoolmeal-tables-3"></div>
-                <div class = "schoolmeal-tables-4"></div>
-            </div>
-            <div class="schoolmeal-table-set">
-                <div class = "schoolmeal-tables-1"></div>
-                <div class = "schoolmeal-tables-2"></div>
-                <br>
-                <div class = "schoolmeal-tables-3"></div>
-                <div class = "schoolmeal-tables-4"></div>
-            </div>
-            <div class="schoolmeal-table-set">
-                <div class = "schoolmeal-tables-1"></div>
-                <div class = "schoolmeal-tables-2"></div>
-                <br>
-                <div class = "schoolmeal-tables-3"></div>
-                <div class = "schoolmeal-tables-4"></div>
-            </div>
-            <div class="schoolmeal-table-set">
-                <div class = "schoolmeal-tables-1"></div>
-                <div class = "schoolmeal-tables-2"></div>
-                <br>
-                <div class = "schoolmeal-tables-3"></div>
-                <div class = "schoolmeal-tables-4"></div>
-            </div>
-            <div class="schoolmeal-table-set">
-                <div class = "schoolmeal-tables-1"></div>
-                <div class = "schoolmeal-tables-2"></div>
-                <br>
-                <div class = "schoolmeal-tables-3"></div>
-                <div class = "schoolmeal-tables-4"></div>
-            </div>
-            <div class="schoolmeal-table-set">
-                <div class = "schoolmeal-tables-1"></div>
-                <div class = "schoolmeal-tables-2"></div>
-                <br>
-                <div class = "schoolmeal-tables-3"></div>
-                <div class = "schoolmeal-tables-4"></div>
-            </div>
-    </div>
-
-    <div class = "schoolmeal-tables-set-line-2">
-        <div class="schoolmeal-table-set">
-            <div class = "schoolmeal-tables-1"></div>
-            <div class = "schoolmeal-tables-2"></div>
-            <br>
-            <div class = "schoolmeal-tables-3"></div>
-            <div class = "schoolmeal-tables-4"></div>
-        </div>
-        <div class="schoolmeal-table-set">
-            <div class = "schoolmeal-tables-1"></div>
-            <div class = "schoolmeal-tables-2"></div>
-            <br>
-            <div class = "schoolmeal-tables-3"></div>
-            <div class = "schoolmeal-tables-4"></div>
-        </div>
-        <div class="schoolmeal-table-set">
-            <div class = "schoolmeal-tables-1"></div>
-            <div class = "schoolmeal-tables-2"></div>
-            <br>
-            <div class = "schoolmeal-tables-3"></div>
-            <div class = "schoolmeal-tables-4"></div>
-        </div>
-        <div class="schoolmeal-table-set">
-            <div class = "schoolmeal-tables-1"></div>
-            <div class = "schoolmeal-tables-2"></div>
-            <br>
-            <div class = "schoolmeal-tables-3"></div>
-            <div class = "schoolmeal-tables-4"></div>
-        </div>
-        <div class="schoolmeal-table-set">
-            <div class = "schoolmeal-tables-1"></div>
-            <div class = "schoolmeal-tables-2"></div>
-            <br>
-            <div class = "schoolmeal-tables-3"></div>
-            <div class = "schoolmeal-tables-4"></div>
-        </div>
-        <div class="schoolmeal-table-set">
-            <div class = "schoolmeal-tables-1"></div>
-            <div class = "schoolmeal-tables-2"></div>
-            <br>
-            <div class = "schoolmeal-tables-3"></div>
-            <div class = "schoolmeal-tables-4"></div>
-        </div>
-        <div class="schoolmeal-table-set">
-            <div class = "schoolmeal-tables-1"></div>
-            <div class = "schoolmeal-tables-2"></div>
-            <br>
-            <div class = "schoolmeal-tables-3"></div>
-            <div class = "schoolmeal-tables-4"></div>
-        </div>
-        <div class="schoolmeal-table-set">
-            <div class = "schoolmeal-tables-1"></div>
-            <div class = "schoolmeal-tables-2"></div>
-            <br>
-            <div class = "schoolmeal-tables-3"></div>
-            <div class = "schoolmeal-tables-4"></div>
-        </div>
-        <div class="schoolmeal-table-set">
-            <div class = "schoolmeal-tables-1"></div>
-            <div class = "schoolmeal-tables-2"></div>
-            <br>
-            <div class = "schoolmeal-tables-3"></div>
-            <div class = "schoolmeal-tables-4"></div>
-        </div>
-    </div>
-
-<div class = "schoolmeal-tables-set-line-3">
-    <div class="schoolmeal-table-set">
-    <div class = "schoolmeal-tables-1"></div>
-    <div class = "schoolmeal-tables-2"></div>
-    <br>
-    <div class = "schoolmeal-tables-3"></div>
-    <div class = "schoolmeal-tables-4"></div>
-    </div>
-    <div class="schoolmeal-table-set">
-    <div class = "schoolmeal-tables-1"></div>
-    <div class = "schoolmeal-tables-2"></div>
-    <br>
-    <div class = "schoolmeal-tables-3"></div>
-    <div class = "schoolmeal-tables-4"></div>
-    </div>
-    <div class="schoolmeal-table-set">
-    <div class = "schoolmeal-tables-1"></div>
-    <div class = "schoolmeal-tables-2"></div>
-    <br>
-    <div class = "schoolmeal-tables-3"></div>
-    <div class = "schoolmeal-tables-4"></div>
-    </div>
-    <div class="schoolmeal-table-set">
-    <div class = "schoolmeal-tables-1"></div>
-    <div class = "schoolmeal-tables-2"></div>
-    <br>
-    <div class = "schoolmeal-tables-3"></div>
-    <div class = "schoolmeal-tables-4"></div>
-    </div>
-    <div class="schoolmeal-table-set">
-    <div class = "schoolmeal-tables-1"></div>
-    <div class = "schoolmeal-tables-2"></div>
-    <br>
-    <div class = "schoolmeal-tables-3"></div>
-    <div class = "schoolmeal-tables-4"></div>
-    </div>
-    <div class="schoolmeal-table-set">
-    <div class = "schoolmeal-tables-1"></div>
-    <div class = "schoolmeal-tables-2"></div>
-    <br>
-    <div class = "schoolmeal-tables-3"></div>
-    <div class = "schoolmeal-tables-4"></div>
-    </div>
-    </div>
-</div>
-
-    </main>
-
-    <script src="N-schoolmeal.js"></script>
-    
+    <script src="./schoolmeal.js"></script>
+    <script src="./schoolmealAddevent.js"></script>
 </body>
 </html>
